@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Meu primeiro site</title>
+</head>
+<body>
+    <center>
+        <img src="img/download.jpg" width="150px">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="empresa.html">Empresa</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.hmtl">Entre em Contato</a>
+        <a href="cadastro.html">Cadastre-se</a>
+    </nav>
+    </center>
+    <br>
+    <center>
+
+        <form action="enviaemail.cs" method="post">
+            <label>Nome: </label>
+            <input type="text" name="nome" value="bernardo" placeholder="Informe seu nome completo" readonly>
+            
+            <label>E-mail</label>
+            <input type="email" name="email" required>
+            
+            <label>Senha</label>
+            <input type="password" name="senha">
+            
+            <select name="estado">
+                <option value="">Selecione o estado</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </select>
+            
+            <label>Sexo:</label>
+            <span>
+                <input type="radio" name="sexo" value="M"> Masculino
+                <input type="radio" name="sexo" value="F"> Feminino
+            </span>
+            <br>
+            <br>
+            
+            <button type="submit">Enviar</button>
+            <input type="reset" name="enviar" value="Limpar">
+            
+            <label>Comidas</label>
+            <input type="checkbox" name="comida" value="lasanha">Lasanha
+            <input type="checkbox" name="comida" value="pizza">Pizza
+            <input type="checkbox" name="comida" value="arroz">Arroz
+            <input type="checkbox" name="comida" value="feijao">Feijão
+
+           
+            
+        </form>
+    </center>
+            
+            
+            
+
+
+</body>
+</html>
