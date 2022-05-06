@@ -13,29 +13,38 @@
         <a href="index.html">Home</a>
         <a href="empresa.html">Empresa</a>
         <a href="servicos.html">Serviços</a>
-        <a href="contato.hmtl">Entre em Contato</a>
+        <a href="contatos.html">Entre em Contato</a>
         <a href="cadastro.html">Cadastre-se</a>
     </nav>
     </center>
     <br>
     <center>
 
-        <form action="enviaemail.cs" method="post">
+        <form action="enviaemail.cs" class="cadastroPessoa" method="post" enctype="multipart/form-data">
             <label>Nome: </label>
-            <input type="text" name="nome" value="bernardo" placeholder="Informe seu nome completo" readonly>
+            <input type="text" name="nome" value="bernardo" placeholder="Informe seu nome completo">
             
             <label>E-mail</label>
-            <input type="email" name="email" required>
+            <input type="email" name="email" value="bernardo@gmail.com" required>
             
             <label>Senha</label>
-            <input type="password" name="senha">
-            
+            <input type="password" name="senha" minlength="8" maxlength="10">
+
+            <label">Foto</label>
+            <input type="file" name="foto" multiple>
+            <br>
+
+            <textarea name="mensagem" cols="30" rows="10" required></textarea>
+
+            <input type="hidden" name="codigoibge" value="209348209302">
+
             <select name="estado">
                 <option value="">Selecione o estado</option>
-                <option value="SC">Santa Catarina</option>
+                <option value="SC" selected>Santa Catarina</option>
                 <option value="PR">Paraná</option>
                 <option value="RS">Rio Grande do Sul</option>
             </select>
+            <br>
             
             <label>Sexo:</label>
             <span>
