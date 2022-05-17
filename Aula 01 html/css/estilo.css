@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&display=swap');
 
+@import url('icofont.min.css')
+
 html, body{
     margin: 0;
     padding: 0;
@@ -7,6 +9,8 @@ html, body{
    *{
        font-family: 'Roboto Slab', sans-serif;
    }
+
+   /*confg de navegação*/
 nav{
     position: absolute;
     left: 0;
@@ -38,9 +42,22 @@ nav a{
     
 }
 
-html, body{
-    background-color: red;
-  opacity: 1; ;}
+/*foto de background*/
+
+ body{
+    background: blueviolet;
+  }
+  body.pageEmpresa{
+    background: url('../img/Edu+e+Monica_Como+as+Cores+Impactam+na+Fotografia.jpg') no-repeat center;
+  }
+
+  body.entrada{
+      background: url(../img/maracana-libertadores-flamengo-1280x720.jpg);
+  }
+  body.entrada{
+      color: #ffffff;
+  }
+
 
  /*regra dos conteudos*/
 
@@ -96,6 +113,8 @@ html, body{
          0,15s border-radius ease-out,
     }
 
+    /*efeito maquina de escrever*/
+    
     .poze{
         font-size: 1.2cm;
         display: inline-block;
@@ -120,6 +139,8 @@ html, body{
         }
     }
 
+    /*video e audio*/
+
     .video{
         padding: 10px 150px;
     }
@@ -128,22 +149,63 @@ html, body{
         padding: 10px 150px;
     }
 
-    /*estilos do carousel*/
+    /*estilos do carousel para fazer efeito*/
     .carousel{
         width: 100%;
         display: inline-block;
         margin: 0;
+        padding: 2px;
     }
 
     .carousel li{
         list-style: none;
         overflow: hidden;
         float: left;
-        margin: 15px;
-        margin-left: 10px;
+        margin: 10px;
+        margin-left: 5px;
         padding: 1px;
 
     }
+
+    /*configuração como colocar video de background*/
+
+    body.Pageservicos{
+        background: unset;
+    }
+
+    body.Pageservicos video{
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.8;
+    }
+
+    body.Pageservicos{
+        color: #ffffff;
+    }
+
+
+    body.servicos{
+        background: unset;
+    }
+
+    body.servicos video{
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0,6;
+    }
+    
+    body.servicos{
+        background: url(../img/maracana-libertadores-flamengo-1280x720.jpg);
+        color: #ffffff;
+    }
+
+
 
     
 
